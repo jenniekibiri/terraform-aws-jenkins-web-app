@@ -1,6 +1,10 @@
 # Terraform commands
 
-terraform apply -var-file terraform-dev.tfvars -auto-approve
+```bash
+ terraform apply -var-file terraform-dev.tfvars -auto-approve
+
+ ```
+ 
 
 - auto approve to avoid the yes prompt
 
