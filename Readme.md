@@ -1,24 +1,24 @@
-# terraform commands
+# Terraform commands
 
 terraform apply -var-file terraform-dev.tfvars -auto-approve
 
 - auto approve to avoid the yes prompt
 
-## defaults values
+## Defaults values
 
 - override the values in the terraform-dev.tfvars
 
-## type variables
+## Type variables
 
 - type defs (string, number, list)
 
 use list or object to define the variables
 
-## environment variables
+## Environment variables
 
 export TF_VAR_variable_name=value to define global variables
 
-## access key and secret key
+## Access key and secret key
 
 set the variables in aws config file so that you dont expose your keys if pushed to github
 
