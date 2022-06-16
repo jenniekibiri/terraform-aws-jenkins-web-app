@@ -48,3 +48,25 @@ The above approach is not the most efficient way to set the variables.
 if you close the terminal and open it again, the variables are not set.
 
 use ```aws configure``` to set the variables in aws config file is the best way to set the variables but have aws cli installed.
+
+
+
+<!-- # resource "aws_route_table" "myapp-route-table" {
+#   #which VPC this route table belongs to
+#   vpc_id=aws_vpc.myapp-vpc.id
+#   route {
+#     cidr_block = "0.0.0.0/0"
+#     gateway_id = aws_internet_gateway.myapp-igw.id
+
+#   }
+#   tags = {
+#     Name : "${var.env_prefix}-rtb"
+#   }
+  
+# }
+
+# resource "aws_route_table_association" "a-rtb-subnet" {
+#   subnet_id = aws_subnet.myapp-subnet-1.id
+#   route_table_id = aws_route_table.myapp-route-table.id
+  
+# } -->
